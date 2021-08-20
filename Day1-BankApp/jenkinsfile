@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 node {
     stage('SCM checkout'){
         git 'https://github.com/rahulmalewadi/bankrepo.git'
@@ -6,7 +6,7 @@ node {
     stage ('Compile-Package'){
         def mvnHome = tool name: 'maven 3.8.2' , type: 'maven'
         sh "${mvnHome}/bin/mvn package"
-=======
+
 pipeline {
     agent any
 
@@ -37,6 +37,6 @@ pipeline {
                 }
             }
         }
->>>>>>> 2d3adaa067bd11790b770b444746cd10f79fd237
+
     }
 }
